@@ -4,11 +4,11 @@ public class EncryptionShift implements IEncrypt{
 
     public static int a_code = 97;
     public static int z_code = 122;
-    public static int code_distance = a_code - z_code + 1;
+    public static int code_distance = z_code - a_code + 1;
 
     public static int A_code = 65;
     public static int Z_code = 90;
-    public static int uppercase_code_distance = A_code - Z_code + 1;
+    public static int uppercase_code_distance = Z_code - A_code + 1;
 
     @Override
     public String encrypt(String toEncrypt, int key) {
