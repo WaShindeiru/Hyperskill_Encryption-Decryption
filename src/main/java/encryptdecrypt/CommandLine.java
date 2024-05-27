@@ -9,6 +9,19 @@ public class CommandLine {
         fileAccess = new FileAccess();
     }
 
+    public static IEncrypt getEncryption(String name) throws Exception {
+        switch (name) {
+            case "shift":
+                return new EncryptionShift();
+
+            case "unicode":
+                return new EncryptionUnicode();
+
+            default:
+                throw new Exception("Error: Unknown encryption name: " + name);
+        }
+    }
+
     public int handleInput(String[] args) {
 
         String mode = "enc";
@@ -49,11 +62,11 @@ public class CommandLine {
             }
         }
 
-        if (algorithmName.equals("shift")) {
-            encryption = new EncryptionShift();
-
-        } else if (algorithmName.equals("unicode")) {
-            encryption = new EncryptionUnicode();
+        try {
+            encryption = getEncryption(algorithmName);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return 1;
         }
 
         String wordToEncrypt = "";
