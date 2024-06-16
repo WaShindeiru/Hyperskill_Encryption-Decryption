@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.encrypt;
 
 public class EncryptionUnicode implements IEncrypt {
 

@@ -1,6 +1,6 @@
-package encryptdecrypt;
+package encryptdecrypt.encrypt;
 
-public class EncryptionShift implements IEncrypt{
+public class EncryptionShift implements IEncrypt {
 
     public static int a_code = 97;
     public static int z_code = 122;

@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.encrypt;
 
 public interface IEncrypt {
 

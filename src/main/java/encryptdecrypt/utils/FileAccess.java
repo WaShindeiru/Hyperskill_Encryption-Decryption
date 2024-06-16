@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.utils;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.encrypt;
 
 import org.junit.jupiter.api.Test;
 
