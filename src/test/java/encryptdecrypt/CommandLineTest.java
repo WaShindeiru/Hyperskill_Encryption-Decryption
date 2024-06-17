@@ -105,7 +105,7 @@ class CommandLineTest {
    }
 
    @Test
-   void testHandleInputDecryptShiftReadFromFile() {
+   void testHandleInputDecryptShiftReadFromFileWithBothDataAndInputPresent() {
       String inputPath = "./src/test/resources/test2.txt";
       try {
          fileAccess.writeToFile(inputPath, "YBgc");
@@ -157,5 +157,32 @@ class CommandLineTest {
 
       int result = commandLine.handleInput(args);
       assertThat(result).isEqualTo(1);
+   }
+
+   @Test
+   void testHandleInputDecryptShiftReadFromFile() {
+      String inputPath = "./src/test/resources/test2.txt";
+      try {
+         fileAccess.writeToFile(inputPath, "YBgc");
+      } catch (Exception e) {
+         fail(e.getMessage());
+      }
+
+      String path = "./src/test/resources/test.txt";
+      String[] args = {"-in", inputPath, "-mode", "dec", "-key", "3", "-alg", "shift",
+            "-out", path};
+
+      commandLine.handleInput(args);
+
+      String result = null;
+      try {
+         result = fileAccess.readFromFile(path).trim();
+      } catch (Exception e) {
+         fail(e.getMessage());
+      }
+
+      assertNotNull(result);
+      String correct = "VYdz";
+      assertThat(result).isEqualTo(correct);
    }
 }
