@@ -3,7 +3,7 @@ package encryptdecrypt;
 import encryptdecrypt.encrypt.EncryptionShift;
 import encryptdecrypt.encrypt.EncryptionUnicode;
 import encryptdecrypt.encrypt.IEncrypt;
-import encryptdecrypt.utils.FileAccess;
+import encryptdecrypt.internal.FileAccess;
 
 public class CommandLine {
 
