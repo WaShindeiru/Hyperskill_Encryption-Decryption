@@ -55,7 +55,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>encryptdecrypt.Main</mainClass>
+                            <mainClass>org.griddynamics.encryptdecrypt.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

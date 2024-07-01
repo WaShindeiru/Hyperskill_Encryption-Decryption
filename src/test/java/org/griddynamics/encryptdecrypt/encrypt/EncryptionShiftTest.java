@@ -1,5 +1,6 @@
-package encryptdecrypt.encrypt;
+package org.griddynamics.encryptdecrypt.encrypt;
 
+import org.griddynamics.encryptdecrypt.encrypt.EncryptionShift;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

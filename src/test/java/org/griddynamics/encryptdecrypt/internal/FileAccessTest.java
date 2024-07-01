@@ -1,5 +1,6 @@
-package encryptdecrypt.internal;
+package org.griddynamics.encryptdecrypt.internal;
 
+import org.griddynamics.encryptdecrypt.internal.FileAccess;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package encryptdecrypt.encrypt;
+package org.griddynamics.encryptdecrypt.encrypt;
 
 public class EncryptionShift implements IEncrypt {
 

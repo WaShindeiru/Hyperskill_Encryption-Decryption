@@ -1,4 +1,4 @@
-package encryptdecrypt.internal;
+package org.griddynamics.encryptdecrypt.internal;
 
 import java.io.*;
 

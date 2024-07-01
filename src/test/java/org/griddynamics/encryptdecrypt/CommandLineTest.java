@@ -1,9 +1,10 @@
-package encryptdecrypt;
+package org.griddynamics.encryptdecrypt;
 
-import encryptdecrypt.encrypt.EncryptionShift;
-import encryptdecrypt.encrypt.EncryptionUnicode;
-import encryptdecrypt.encrypt.IEncrypt;
-import encryptdecrypt.internal.FileAccess;
+import org.griddynamics.encryptdecrypt.CommandLine;
+import org.griddynamics.encryptdecrypt.encrypt.EncryptionShift;
+import org.griddynamics.encryptdecrypt.encrypt.EncryptionUnicode;
+import org.griddynamics.encryptdecrypt.encrypt.IEncrypt;
+import org.griddynamics.encryptdecrypt.internal.FileAccess;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

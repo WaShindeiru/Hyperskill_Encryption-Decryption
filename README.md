@@ -6,6 +6,6 @@ https://hyperskill.org/projects/46
 ## How to run
 ```zsh
 mvn clean package
-java -jar ./target/EncryptionDecryptionFinished-1.0-SNAPSHOT.jar -mode enc -key 6 -alg unicode -data "Welcome to GridDynamics" -out ./test.txt
-java -jar ./target/EncryptionDecryptionFinished-1.0-SNAPSHOT.jar -mode dec -key 6 -alg unicode -in ./test.txt
+java -jar ./target/EncryptionDecryptionFinished-1.0-SNAPSHOT.jar -mode enc -key 6 -alg shift -data "Welcome to GridDynamics!" -out ./test.txt
+java -jar ./target/EncryptionDecryptionFinished-1.0-SNAPSHOT.jar -mode dec -key 6 -alg shift -in ./test.txt
 ```
